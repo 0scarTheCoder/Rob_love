@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associate Professor Robert Love - Plastic & Reconstructive Surgeon | West Perth</title>
+    <meta name="description" content="Associate Professor Robert Love, FRACS - Expert plastic and reconstructive surgeon specializing in hand surgery, breast surgery, body contouring, and skin cancer surgery. West Perth practice.">
+    <meta name="keywords" content="plastic surgeon, reconstructive surgery, hand surgery, breast surgery, West Perth, Robert Love, FRACS">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Assoc Prof Robert Love</h1>
+                    <p>FRACS - Plastic & Reconstructive Surgeon</p>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#procedures">Procedures</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Expert Plastic & Reconstructive Surgery</h2>
+                <p class="hero-subtitle">Associate Professor Robert Love brings over 20+ years of surgical excellence, specializing in plastic surgery, hand surgery, breast surgery, and skin cancer treatment</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">FRACS</span>
+                        <span class="stat-label">Fellowship Qualified</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Specialties</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="#procedures" class="btn btn-secondary">View Procedures</a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="medical-animation"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Associate Professor Robert Love</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Leading Plastic & Reconstructive Surgeon</h3>
+                        <p>Associate Professor Robert Love is a highly respected plastic and reconstructive surgeon with over two decades of surgical excellence. He graduated with honors from the University of Melbourne in 1991 and achieved Fellowship of the Royal Australasian College of Surgeons (FRACS) in 2001.</p>
+                        
+                        <div class="leadership-roles">
+                            <h4>Leadership & Recognition</h4>
+                            <ul>
+                                <li>Past Chairman of West Australian regional committee, Royal Australian College of Surgeons</li>
+                                <li>Immediate past Head of Plastic Surgery at Sir Charles Gairdner Hospital</li>
+                                <li>Past President of West Australian Society of Plastic Surgeons</li>
+                                <li>Leibinger Travelling Fellowship prize winner (awarded twice)</li>
+                                <li>Rotary Paul Harris Fellowship recipient</li>
+                                <li>Special Services Award from Royal Australian College of Surgeons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="surgeon-illustration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="procedures" class="procedures">
+            <div class="container">
+                <h2>Surgical Procedures & Animations</h2>
+                <p class="procedures-intro">Explore our comprehensive surgical procedures with interactive animations to help you understand each treatment</p>
+                
+                <div class="procedures-grid">
+                    <div class="procedure-card" data-procedure="hand">
+                        <div class="procedure-icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <h3>Hand Surgery</h3>
+                        <p>Specialized treatment for hand injuries, carpal tunnel, trigger finger, and complex reconstructive procedures</p>
+                        <button class="btn-animation" onclick="showProcedure('hand')">View Animation</button>
+                    </div>
+
+                    <div class="procedure-card" data-procedure="breast">
+                        <div class="procedure-icon">
+                            <i class="fas fa-ribbon"></i>
+                        </div>
+                        <h3>Breast Surgery</h3>
+                        <p>Breast reconstruction, augmentation, reduction, and oncoplastic surgery with natural-looking results</p>
+                        <button class="btn-animation" onclick="showProcedure('breast')">View Animation</button>
+                    </div>
+
+                    <div class="procedure-card" data-procedure="body">
+                        <div class="procedure-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Body Contouring</h3>
+                        <p>Abdominoplasty, liposuction, body lifts, and post-weight loss reconstructive procedures</p>
+                        <button class="btn-animation" onclick="showProcedure('body')">View Animation</button>
+                    </div>
+
+                    <div class="procedure-card" data-procedure="skin">
+                        <div class="procedure-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Skin Cancer Surgery</h3>
+                        <p>Mohs surgery, wide local excision, and complex reconstructive procedures for skin cancer treatment</p>
+                        <button class="btn-animation" onclick="showProcedure('skin')">View Animation</button>
+                    </div>
+
+                    <div class="procedure-card" data-procedure="reconstructive">
+                        <div class="procedure-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Reconstructive Surgery</h3>
+                        <p>Complex reconstruction following trauma, cancer, or congenital conditions using advanced techniques</p>
+                        <button class="btn-animation" onclick="showProcedure('reconstructive')">View Animation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animation Modal -->
+        <div id="procedureModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-header">
+                    <h2 id="modalTitle">Procedure Animation</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="animation-container" id="animationContainer">
+                        <!-- Animations will be inserted here -->
+                    </div>
+                    <div class="procedure-info" id="procedureInfo">
+                        <!-- Procedure information will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="qualifications" class="qualifications">
+            <div class="container">
+                <h2>Qualifications & Memberships</h2>
+                <div class="qualifications-grid">
+                    <div class="qual-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <ul>
+                            <li><strong>MBBS</strong> - University of Melbourne (1991, with honors)</li>
+                            <li><strong>FRACS</strong> - Fellowship of Royal Australasian College of Surgeons (2001)</li>
+                        </ul>
+                    </div>
+
+                    <div class="qual-section">
+                        <h3><i class="fas fa-award"></i> Awards & Fellowships</h3>
+                        <ul>
+                            <li>Leibinger Travelling Fellowship (awarded twice)</li>
+                            <li>Rotary Paul Harris Fellowship</li>
+                            <li>Special Services Award - Royal Australian College of Surgeons</li>
+                        </ul>
+                    </div>
+
+                    <div class="qual-section">
+                        <h3><i class="fas fa-users"></i> Professional Memberships</h3>
+                        <ul>
+                            <li>Australian Plastic Surgery Society</li>
+                            <li>American Plastic Surgery Society</li>
+                            <li>Australian Hand Surgery Society</li>
+                            <li>West Australian Melanoma Advisory Service</li>
+                        </ul>
+                    </div>
+
+                    <div class="qual-section">
+                        <h3><i class="fas fa-hospital"></i> Hospital Affiliations</h3>
+                        <ul>
+                            <li>St John of God Subiaco Hospital</li>
+                            <li>St John of God Murdoch Hospital</li>
+                            <li>Sir Charles Gairdner Hospital (Former Head of Plastic Surgery)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Practice Details</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>West Perth Practice</h4>
+                                <p>17 Richardson Street<br>West Perth WA 6005</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:0893213344">08 9321 3344</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-fax"></i>
+                            <div>
+                                <h4>Fax</h4>
+                                <p>08 9321 3355</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:drrobertloveplasticsurgeon@gmail.com">drrobertloveplasticsurgeon@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-file-medical"></i>
+                            <div>
+                                <h4>EDI (for GPs)</h4>
+                                <p>robllove</p>
+                            </div>
+                        </div>
+
+                        <div class="additional-locations">
+                            <h4>Additional Consulting Locations</h4>
+                            <p>St John of God Wexford Medical Centre<br>Suite 29, Level 1, Murdoch WA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h3>Schedule a Consultation</h3>
+                        <p>Please call our office to schedule your consultation with Associate Professor Love. Our experienced team will assist you with appointment scheduling and answer any questions about procedures, costs, and preparation.</p>
+                        
+                        <div class="consultation-info">
+                            <h4>What to Expect</h4>
+                            <ul>
+                                <li>Comprehensive initial consultation</li>
+                                <li>Detailed discussion of treatment options</li>
+                                <li>Review of surgical animations and procedures</li>
+                                <li>Personalized treatment planning</li>
+                                <li>Discussion of risks, benefits, and recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Associate Professor Robert Love</h3>
+                    <p>FRACS - Plastic & Reconstructive Surgeon</p>
+                </div>
+                <div class="footer-contact">
+                    <p>17 Richardson Street, West Perth WA 6005</p>
+                    <p>Phone: <a href="tel:0893213344">08 9321 3344</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Associate Professor Robert Love. All rights reserved. | Website designed for patient education and information.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>

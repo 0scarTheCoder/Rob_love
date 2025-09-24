@@ -1,0 +1,29 @@
+{
+  "name": "dr-robert-love-website",
+  "version": "1.0.0",
+  "description": "Professional website for Associate Professor Robert Love - Plastic & Reconstructive Surgeon",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Build completed - static site ready'",
+    "start": "npx serve public -p 3000",
+    "dev": "npx serve public -p 3000 --live-reload",
+    "deploy": "firebase deploy"
+  },
+  "keywords": [
+    "plastic surgery",
+    "hand surgery",
+    "reconstructive surgery",
+    "medical website",
+    "surgeon portfolio"
+  ],
+  "author": "Dr. Robert Love",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0scarTheCoder/Rob_love.git"
+  },
+  "homepage": "https://github.com/0scarTheCoder/Rob_love#readme"
+}
