@@ -295,8 +295,8 @@ body {
 }
 
 .doctor-photo {
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
@@ -795,8 +795,8 @@ footer {
     }
     
     .doctor-photo {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
         margin: 0 auto;
     }
     
